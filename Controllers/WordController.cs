@@ -1,20 +1,16 @@
-using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Threading.Tasks;
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Wordprocessing;
+using Microsoft.AspNetCore.Mvc;
 
 namespace WordGeneratorAPI_netcore.Controllers
 {
   [ApiController]
   [Route("api/[controller]")]
-  public class WordGeneratorController : ControllerBase
+  public class WordController : ControllerBase
   {
-    [HttpPost]
-    [Route("generate")]
+    [HttpPost("generate")]
     public async Task<IActionResult> GenerateWordDocument([FromBody] Dictionary<string, string> data)
     {
       try
@@ -121,4 +117,5 @@ namespace WordGeneratorAPI_netcore.Controllers
       body.Append(paragraph);
     }
   }
+
 }

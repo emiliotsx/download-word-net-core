@@ -34,3 +34,4 @@ D:\Documents\Proyectos\emiliogonzalez\WordGeneratorAPI-netcore\obj\Debug\net8.0\
 D:\Documents\Proyectos\emiliogonzalez\WordGeneratorAPI-netcore\obj\Debug\net8.0\WordGeneratorAPI-netcore.pdb
 D:\Documents\Proyectos\emiliogonzalez\WordGeneratorAPI-netcore\obj\Debug\net8.0\WordGeneratorAPI-netcore.genruntimeconfig.cache
 D:\Documents\Proyectos\emiliogonzalez\WordGeneratorAPI-netcore\obj\Debug\net8.0\ref\WordGeneratorAPI-netcore.dll
+D:\Documents\Proyectos\emiliogonzalez\WordGeneratorAPI-netcore\obj\Debug\net8.0\WordGeneratorAPI-netcore.sourcelink.json
