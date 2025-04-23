@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "cvpCehirmXPO377p5jiHiP+47DxV6nwD8wFO4oxnAYg=",
+  "Source": "WordGeneratorAPI-netcore",
+  "BasePath": "_content/WordGeneratorAPI-netcore",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

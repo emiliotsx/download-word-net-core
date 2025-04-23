@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordGeneratorAPI-netcore", "WordGeneratorAPI-netcore.csproj", "{1ACE9397-52EA-AF6A-26A7-37DF516813DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1ACE9397-52EA-AF6A-26A7-37DF516813DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ACE9397-52EA-AF6A-26A7-37DF516813DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ACE9397-52EA-AF6A-26A7-37DF516813DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ACE9397-52EA-AF6A-26A7-37DF516813DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD2C6FA0-381A-49B0-87A7-60A6D83F99A6}
+	EndGlobalSection
+EndGlobal
