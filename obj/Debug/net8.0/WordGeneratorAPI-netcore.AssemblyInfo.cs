@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WordGeneratorAPI-netcore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a8468e5fe927396e5e340947fcb55b83427891e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c7e2beed0bc2313078dc4e8bdeb6eced3280241")]
 [assembly: System.Reflection.AssemblyProductAttribute("WordGeneratorAPI-netcore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WordGeneratorAPI-netcore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
