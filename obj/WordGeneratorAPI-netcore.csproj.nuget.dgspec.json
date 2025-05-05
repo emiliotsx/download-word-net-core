@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\Proyectos\\emiliogonzalez\\WordGeneratorAPI-netcore\\WordGeneratorAPI-netcore.csproj": {}
+    "D:\\Documents\\Proyectos\\emiliogonzalez\\support-kevin-lezana\\WordGeneratorAPI-netcore\\WordGeneratorAPI-netcore.csproj": {}
   },
   "projects": {
-    "D:\\Documents\\Proyectos\\emiliogonzalez\\WordGeneratorAPI-netcore\\WordGeneratorAPI-netcore.csproj": {
+    "D:\\Documents\\Proyectos\\emiliogonzalez\\support-kevin-lezana\\WordGeneratorAPI-netcore\\WordGeneratorAPI-netcore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\Proyectos\\emiliogonzalez\\WordGeneratorAPI-netcore\\WordGeneratorAPI-netcore.csproj",
+        "projectUniqueName": "D:\\Documents\\Proyectos\\emiliogonzalez\\support-kevin-lezana\\WordGeneratorAPI-netcore\\WordGeneratorAPI-netcore.csproj",
         "projectName": "WordGeneratorAPI-netcore",
-        "projectPath": "D:\\Documents\\Proyectos\\emiliogonzalez\\WordGeneratorAPI-netcore\\WordGeneratorAPI-netcore.csproj",
+        "projectPath": "D:\\Documents\\Proyectos\\emiliogonzalez\\support-kevin-lezana\\WordGeneratorAPI-netcore\\WordGeneratorAPI-netcore.csproj",
         "packagesPath": "C:\\Users\\emili\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\Proyectos\\emiliogonzalez\\WordGeneratorAPI-netcore\\obj\\",
+        "outputPath": "D:\\Documents\\Proyectos\\emiliogonzalez\\support-kevin-lezana\\WordGeneratorAPI-netcore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\emili\\AppData\\Roaming\\NuGet\\NuGet.Config",

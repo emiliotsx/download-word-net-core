@@ -45,39 +45,29 @@ namespace WordGeneratorAPI
 
                     foreach (var entry in dictionary)
                     {
-                        var parts = entry.Key.Split(new[] { '-' }, 2, StringSplitOptions.None);
-
-                        string searchText = CleanText(parts[1]); // Texto a buscar
-
-                        Console.WriteLine($"searchText: {searchText}");
-                        string insertText = entry.Value; // Texto a insertar
+                        // Dividir la clave por el primer \n
+                        var splitKey = entry.Key.Split(new[] { '\n' }, 2, StringSplitOptions.None);
+                        string searchKey = splitKey[0]; // Texto a la izquierda del primer \n
+                        string replacementText = entry.Value;
 
                         foreach (var paragraph in body.Elements<Paragraph>())
                         {
-                            foreach (var text in paragraph.Descendants<Text>())
+                            string paragraphText = GetParagraphText(paragraph);
+
+                            if (string.Equals(paragraphText.Trim(), searchKey.Trim(), StringComparison.InvariantCulture))
                             {
-                                if (CleanText(text.Text.Trim()).Contains(searchText))
-                                {
-                                    // Console.WriteLine($"Found match for: {searchText}");
+                                Console.WriteLine($"Found match for: {searchKey}");
 
-                                    AddBreakToParagraph(paragraph, 2); // Insertar dos saltos de línea
-                                    AddTextToParagraph(paragraph, insertText); // Agregar texto
-                                    continue;
-                                } else {
-                                    string paragraphText = CleanText(GetParagraphText(paragraph));
-                                    if (CleanText(paragraphText.Trim()).Contains(searchText))
-                                    {
-                                        Console.WriteLine($"Found match for paragraphText: {searchText}");
+                                // Eliminar el contenido actual
+                                paragraph.RemoveAllChildren<Run>();
 
-                                        AddBreakToParagraph(paragraph, 2); // Insertar dos saltos de línea
-                                        AddTextToParagraph(paragraph, insertText); // Agregar texto
-                                        continue;
-                                    } else {
-                                        Console.WriteLine($"No match for: {searchText}");
-                                        Console.WriteLine($"paragraphText: {paragraphText}");
-                                        Console.WriteLine("\n\n");
-                                    }
-                                }
+                                // Agregar dos saltos de línea
+                                AddBreakToParagraph(paragraph, 2);
+
+                                // Insertar el texto de reemplazo
+                                AddTextToParagraph(paragraph, replacementText);
+
+                                break;
                             }
                         }
                     }
@@ -91,6 +81,11 @@ namespace WordGeneratorAPI
             {
                 Console.WriteLine($"Error modifying the document: {ex.Message}");
             }
+        }
+
+        private static string GetParagraphText(Paragraph paragraph)
+        {
+            return string.Join("", paragraph.Descendants<Text>().Select(t => t.Text));
         }
 
         private static void AddTextToParagraph(Paragraph paragraph, string content)
@@ -110,20 +105,6 @@ namespace WordGeneratorAPI
             {
                 paragraph.Append(new Run(new Break()));
             }
-        }
-
-        private static string CleanText(string text)
-        {
-            return new string(text
-                .Where(c => !char.IsPunctuation(c)) // Eliminar puntuación
-                .Select(c => char.ToLower(c)) // Convertir a minúsculas
-                .ToArray())
-                .Trim();
-        }
-
-        private static string GetParagraphText(Paragraph paragraph)
-        {
-            return string.Join("", paragraph.Descendants<Text>().Select(t => t.Text));
         }
 
     }
